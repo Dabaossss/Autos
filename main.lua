@@ -11,7 +11,9 @@ while true do
 		touchUp(1,x,y)
 		mSleep(1000)
 	end
-	x, y = findColorInRegionFuzzy(0x1a1a1a, 99, 10, 90, 111, 174, 0, 0)
+	x, y = findColor({20, 81, 106, 175},
+		"0|0|0x191919,8|-2|0xe0e0e0,12|-8|0xdcdcdc,17|-16|0x191919,18|19|0x131313",
+		95, 0, 0, 0)
 	if x > -1 then
 		print("返回")
 		touchDown(1,x,y)
